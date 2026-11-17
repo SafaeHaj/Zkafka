@@ -1,0 +1,54 @@
+# Maven build output (including nested modules) and Shade-generated metadata.
+target/
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+pom.xml.releaseBackup
+pom.xml.next
+release.properties
+
+# Compiled Java files and JVM diagnostic output.
+*.class
+*.hprof
+*.jfr
+hs_err_pid*.log
+replay_pid*.log
+
+# Local IDE output and metadata (IntelliJ, Eclipse, and Java language servers).
+/out/
+/bin/
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.factorypath
+.metadata/
+
+# Local broker/ZooKeeper state and logs; keep test fixtures under src/.
+/data/
+/zk-data/
+/zookeeper-data/
+/logs/
+/*.log
+
+# Local temporary files and editor backups.
+/tmp/
+/temp/
+*~
+*.swp
+*.swo
+*.bak
+
+# Local environment values; commit example files without credentials.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Operating-system metadata.
+.DS_Store
+Thumbs.db
+Desktop.ini
