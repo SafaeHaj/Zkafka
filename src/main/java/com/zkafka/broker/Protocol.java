@@ -197,7 +197,8 @@ public final class Protocol {
         return new ProduceResult(offset, errorCode);
     }
 
-    // type | topic | partition | error code | count | (offset, value length, value)*
+    // type | topic | partition | error code | count | (offset, value length,
+    // value)*
     public static FetchResult decodeFetchResponse(ByteBuffer buffer) {
         beginResponse(buffer, FETCH_RESPONSE, 1 + 2 + 4 + 2 + 4, "fetch response");
         decodeTopic(buffer);

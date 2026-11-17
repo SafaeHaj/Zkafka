@@ -7,8 +7,8 @@ public class BrokerInfo {
 
     public BrokerInfo(int id, String host, int port) {
         if (id < 0) {
-        throw new IllegalArgumentException(
-                "Broker ID must be nonnegative: " + id);
+            throw new IllegalArgumentException(
+                    "Broker ID must be nonnegative: " + id);
         }
 
         if (host == null || host.isBlank()) {
@@ -42,8 +42,8 @@ public class BrokerInfo {
     public String toString() {
         return "BrokerInfo[id=" + id + ", host=" + host + ", port=" + port + "]";
     }
-    
-   @Override
+
+    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
