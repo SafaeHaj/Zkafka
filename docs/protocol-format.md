@@ -150,5 +150,5 @@
 
 | Operation | Type | Record |
 | --- | --- | --- |
-| Create topic | | |
-| Replication acknowledgment | | |
+| Create topic | 0x14 | Type followed by uint16 error code |
+| Replication acknowledgment | 0x15 | Type followed by uint16 error code |
